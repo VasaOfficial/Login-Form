@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto:wght@400;700&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    background-color: rgb(49, 118, 246);
+    font-family: "Nunito", sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -14,3 +15,98 @@ body {
     height: 100vh;
     overflow: hidden;
 }
+
+.container {
+    background-color: rgb(5, 65, 129);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.info-input {
+    position: relative;
+    width: 300px;
+    margin: 20px 0 40px;
+}
+
+.info-input input {
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 16px;
+    color: #fff; 
+}
+
+.info-input input:focus,
+.info-input input:valid {
+    outline: 0;
+    border-bottom-color: lightblue;
+}
+
+.info-input label {
+    position: absolute;
+    top: 15px;
+    pointer-events: none;
+}
+
+.info-input label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.info-input input:focus + label span,
+.info-input input:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}
+
+.container a {
+    text-decoration: none;
+    color: rgb(0, 157, 255);
+}
+
+.container p {
+    color: white;
+}
+
+.container label {
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    background-color: rgb(79, 136, 216);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.text {
+    padding-top: 10px;
+}
+
+
+
+
